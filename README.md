@@ -34,8 +34,7 @@ Il permet de manipuler les concepts suivants :
 - `Timer.js` : Timer avec nettoyage
 - `index.js` : Point d’entrée
 
-<!-- Ajoute ici une capture globale de ton app -->
-<img src="TON_SCREEN_GLOBAL_ICI" />
+<img width="704" height="617" alt="Capture d&#39;écran 2026-03-19 090754" src="https://github.com/user-attachments/assets/b87808ad-8e88-469d-981d-d33af37582b5" />
 
 ---
 
@@ -52,7 +51,6 @@ npm install
 ```bash
 npm start
 ```
-
 
 3. Ouvrir dans le navigateur :  http://localhost:3000
 
@@ -78,12 +76,43 @@ Au lancement de l’application :
 
 #### 📌 Interface générale
 
+![Interface](screens/Interface.png)
+
+---
+
 #### 📌 Compteur (useReducer)
+
+![Compteur1](screens/1.png)
+![Compteur2](screens/2.png)
+
+---
 
 #### 📌 Focus Input (useRef)
 
+![FocusInput](screens/3.png)
+
+---
+
 #### 📌 Compteur de rendus
+
+![Rendus](screens/4.png)
+![Console](screens/5.png)
+
+---
 
 #### 📌 Liste des articles (useFetch)
 
+![ListeArticles](screens/6.png)
+
+---
+
 #### 📌 Timer (useEffect)
+
+![Timer](screens/7.png)
+
+---
+
+## Auteur
+- Nom : Malak El Mallouky
+- Filliere : SIR
+
