@@ -1,14 +1,18 @@
 import { useRef, useEffect } from 'react';
 
 function CompteurRendu() {
-  const compteur = useRef(0);
+  const nbRendus = useRef(0);
 
   useEffect(() => {
-    compteur.current += 1;
-    console.log(`Le composant a été affiché ${compteur.current} fois.`);
+    nbRendus.current += 1;
+    console.log(`Rendu numéro : ${nbRendus.current}`);
   });
 
-  return <div>Regarde la console pour voir le nombre de rendus.</div>;
+  return (
+    <div>
+      <p>Ouvre la console pour voir le nombre de rendus</p>
+    </div>
+  );
 }
 
 export default CompteurRendu;

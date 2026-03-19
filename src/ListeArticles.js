@@ -1,11 +1,11 @@
 import useFetch from './useFetch';
 
 function ListeArticles() {
-  const { data, chargement, erreur } = useFetch('https://jsonplaceholder.typicode.com/posts');
+  const { data, loading, error } = useFetch('https://jsonplaceholder.typicode.com/posts');
 
-  if (chargement) return <p>Chargement en cours...</p>
+  if (loading) return <p>Chargement en cours...</p>
 ;
-  if (erreur) return <p>Erreur : {erreur.message}</p>
+  if (error) return <p>Erreur : {error.message}</p>
 ;
 
   return (

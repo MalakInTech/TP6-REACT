@@ -2,19 +2,19 @@ import { useState, useEffect } from 'react';
 
 function useFetch(url) {
   const [data, setData] = useState(null);
-  const [chargement, setChargement] = useState(true);
-  const [erreur, setErreur] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
-    setChargement(true);
+    setLoading(true);
     fetch(url)
       .then((response) => response.json())
       .then((data) => setData(data))
-      .catch((err) => setErreur(err))
-      .finally(() => setChargement(false));
+      .catch((err) => setError(err))
+      .finally(() => setLoading(false));
   }, [url]);
 
-  return { data, chargement, erreur };
+  return { data, loading, error };
 }
 
 export default useFetch;

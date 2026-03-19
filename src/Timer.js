@@ -1,18 +1,22 @@
 import { useState, useEffect } from 'react';
 
 function Timer() {
-  const [secondes, setSecondes] = useState(0);
+  const [temps, setTemps] = useState(0);
 
   useEffect(() => {
-    const id = setInterval(() => {
-      setSecondes((s) => s + 1);
+    const intervalId = setInterval(() => {
+      setTemps((t) => t + 1);
     }, 1000);
 
-    return () => clearInterval(id);
+    return () => clearInterval(intervalId);
   }, []);
 
-  return <p>Temps écoulé : {secondes} secondes </p>
-;
+  return (
+    <div>
+      <p>Temps : {temps} s</p>
+      <button onClick={() => setTemps(0)}>Réinitialiser</button>
+    </div>
+  );
 }
 
 export default Timer;

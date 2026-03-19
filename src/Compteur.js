@@ -1,29 +1,26 @@
 import { useReducer } from 'react';
 
-// État initial
-const initialState = { count: 0 };
+const etatInitial = { valeur: 0 };
 
-// Fonction reducer qui décide comment mettre à jour l’état
-function reducer(state, action) {
+function gestionnaire(state, action) {
   switch (action.type) {
-    case 'increment':
-      return { count: state.count + 1 };
-    case 'decrement':
-      return { count: state.count - 1 };
+    case 'plus':
+      return { valeur: state.valeur + 1 };
+    case 'moins':
+      return { valeur: state.valeur - 1 };
     default:
-      throw new Error('Action non reconnue');
+      return state;
   }
 }
 
 function Compteur() {
-  const [state, dispatch] = useReducer(reducer, initialState);
+  const [etat, envoyer] = useReducer(gestionnaire, etatInitial);
 
   return (
     <div>
-      <p>Compteur : {state.count} </p>
-
-      <button onClick={() => dispatch({ type: 'increment' })}>+1</button>
-      <button onClick={() => dispatch({ type: 'decrement' })}>-1</button>
+      <p>Valeur actuelle : {etat.valeur}</p>
+      <button onClick={() => envoyer({ type: 'plus' })}>Ajouter</button>
+      <button onClick={() => envoyer({ type: 'moins' })}>Retirer</button>
     </div>
   );
 }

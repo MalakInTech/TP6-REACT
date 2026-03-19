@@ -1,17 +1,16 @@
 import { useRef } from 'react';
 
 function FocusInput() {
-  const inputRef = useRef(null);
+  const champRef = useRef(null);
 
-  const handleClick = () => {
-    // current pointe vers l'élément <input>
-    inputRef.current.focus();
+  const activerFocus = () => {
+    champRef.current.focus();
   };
 
   return (
     <div>
-      <input ref={inputRef} placeholder="Tapez ici..." />
-      <button onClick={handleClick}>Mettre le focus</button>
+      <input ref={champRef} placeholder="Écris quelque chose..." />
+      <button onClick={activerFocus}>Focus sur le champ</button>
     </div>
   );
 }
