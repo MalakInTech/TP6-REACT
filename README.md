@@ -76,39 +76,39 @@ Au lancement de l’application :
 
 #### 📌 Interface générale
 
-<img width="906" height="560" alt="Capture d&#39;écran 2026-03-19 085821" src="https://github.com/user-attachments/assets/ef019268-096a-4ef1-95cb-d387e2069b9f" />
+![Interface](screens/Interface.png)
 
 ---
 
 #### 📌 Compteur (useReducer)
 
-<img width="437" height="154" alt="Capture d&#39;écran 2026-03-19 090351" src="https://github.com/user-attachments/assets/5cf18fdd-d482-492f-b900-3b8532df0941" />
-<img width="426" height="172" alt="Capture d&#39;écran 2026-03-19 090358" src="https://github.com/user-attachments/assets/a4a8d06f-58c8-490d-a45a-a433c461bb30" />
+![Compteur1](screens/1.png)
+![Compteur2](screens/2.png)
 
 ---
 
 #### 📌 Focus Input (useRef)
 
-<img width="436" height="112" alt="Capture d&#39;écran 2026-03-19 090404" src="https://github.com/user-attachments/assets/5f4713ad-4e75-4b60-b07e-f03fb725bbda" />
+![FocusInput](screens/3.png)
 
 ---
 
 #### 📌 Compteur de rendus
 
-<img width="467" height="117" alt="Capture d&#39;écran 2026-03-19 090411" src="https://github.com/user-attachments/assets/878d6d93-f059-4ea5-bfbc-ddc0555a30c8" />
-<img width="726" height="323" alt="Capture d&#39;écran 2026-03-19 085907" src="https://github.com/user-attachments/assets/48c5e744-b04d-42e0-a369-f4aae991b799" />
+![Rendus](screens/4.png)
+![Console](screens/5.png)
 
 ---
 
 #### 📌 Liste des articles (useFetch)
 
-<img width="929" height="953" alt="Capture d&#39;écran 2026-03-19 085832" src="https://github.com/user-attachments/assets/c0d5d88f-78db-4f6b-bf4a-3aaf343029c4" />
+![ListeArticles](screens/6.png)
 
 ---
 
 #### 📌 Timer (useEffect)
 
-<img width="437" height="119" alt="Capture d&#39;écran 2026-03-19 085840" src="https://github.com/user-attachments/assets/8e245c73-4531-4b8d-b193-1ed711cf3965" />
+![Timer](screens/7.png)
 
 ---
 
